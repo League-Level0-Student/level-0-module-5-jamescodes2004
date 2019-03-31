@@ -31,20 +31,22 @@ public class GuessingPi {
 		for (int i = 0; i < 10; i++) {
 			// 5. Ask the user for the NEXT digit of pi.
 
-			String nextDigit = JOptionPane.showInputDialog(null, "What is the next digit of pi?");
+			String nextDigit = JOptionPane.showInputDialog(null, "What are the digits of pi?");
 
 			// 6. Compare the user's input to the next digit of your pi variable
 			// (look at step 3 for a clue).
-			if (nextDigit = Pi.charAt(0)) {
+			if (nextDigit.equals(Pi.charAt(i)+"")) {
 				JOptionPane.showMessageDialog(null, "You are correct!");
 			}
-		}
+			else {
+				JOptionPane.showMessageDialog(null, "You failed...");
+			break;}
 		// HINT: use charAt(0) to get 1st char of user input String
 
 		// 7. If they are correct, print out "correct".
 
 		// 8. If they are not, print out "incorrect" and tell them
 		// to start over. Use 'break;' to break out of the loop.
-
+		}
 	}
 }
