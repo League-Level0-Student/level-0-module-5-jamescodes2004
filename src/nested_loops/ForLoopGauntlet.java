@@ -40,4 +40,35 @@ public static void main(String[] args) {
 			
 			System.out.println("In "  + year++ +" I was "+ a +" years old." );
 		}
+		for(int i=0; i<3; i++) {
+		for(int j=0; j<3; j++) {
+			System.out.println(i+" "+j);
+		}
+		
+		}
+		System.out.println("- - - - - - - - - - -");
+		for(int i=0; i<9; i+=3) {
+		for(int j=1; j<4; j++) {
+		System.out.print(i+ j+" ");}
+		System.out.println();
+		}
+		System.out.println("- - - - - - - - - - -");
+		int[] row = new int[11];
+		for(int i=0; i<=9; i++) {
+		for(int j=1; j<=10; j++) {
+			row[j] = (10*i)+j; 
+			System.out.print(row[j] + " "); }
+		System.out.println();
+		}
+		System.out.println("- - - - - - - - - - -");
+		for(int i=0; i<100; i+=10) {
+		for(int j=1; j<11; j++) {
+		System.out.print(i+ j+" ");}
+		System.out.println();
+		}
+		System.out.println("- - - - - - - - - - -");
+		for(int i=1; i<8; i++) {
+		for(int j=0; j<i; j++) {
+		System.out.print("*"+ " ");}
+		System.out.println();}
 }}
